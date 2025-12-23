@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green & Bloom - Meet your next plant friend 🌱</title>
+    <title>Green & Bloom - Meet your next plant friend</title>
     <style>
         * {
             margin: 0;
@@ -152,13 +152,14 @@
         .hero-image {
             width: 100%;
             height: 400px;
-            background: var(--gray-200);
             border-radius: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--gray-600);
-            font-size: 1.25rem;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* Buttons */
@@ -269,12 +270,15 @@
         .product-image {
             width: 100%;
             height: 250px;
-            background: var(--gray-200);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--gray-600);
             position: relative;
+            overflow: hidden;
+            background: var(--gray-100);
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .product-badge {
@@ -287,6 +291,7 @@
             border-radius: 0.25rem;
             font-size: 0.875rem;
             font-weight: 600;
+            z-index: 1;
         }
 
         .product-info {
@@ -652,12 +657,13 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Your go-to for lush, healthy plants</h1>
+                <h1>Welcome to "Green & Bloom".
+Meet your next plant friend 🌱💚</h1>
                 <p>Delivered to your door with care</p>
                 <a href="#products" class="btn btn-primary">Shop Now</a>
             </div>
             <div class="hero-image">
-                [Hero Plant Image]
+                <img src="https://scontent.fdac5-2.fna.fbcdn.net/v/t39.30808-6/600141932_868395655937222_9141733625014131499_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=RijRL6SMUKwQ7kNvwHSBK0p&_nc_oc=AdnAVmNtB57rOy_r9TDUHzAp6Fdp7tnal_wKbywKdTZVgrdgD4RurYrKZiV27xDHuCE&_nc_zt=23&_nc_ht=scontent.fdac5-2.fna&_nc_gid=GBRK6ylfL5fSiEZzekwhyQ&oh=00_AfkmGbQbmiRZDQdrqshmy0_4apCv5boblqcYv7n3hQRFeQ&oe=69502E13" alt="Beautiful Plants">
             </div>
         </div>
     </section>
@@ -679,10 +685,12 @@
             <h2>Our Plants</h2>
         </div>
         <div class="products-grid">
+            <!-- Product 1: Snake Plant -->
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">In Stock</span>
-                    [Snake Plant Image]
+                    <!-- ADD YOUR SNAKE PLANT IMAGE URL HERE -->
+                    <img src="https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?w=400" alt="Snake Plant">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Snake Plant</h3>
@@ -702,10 +710,12 @@
                 </div>
             </div>
 
+            <!-- Product 2: Pothos -->
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">In Stock</span>
-                    [Pothos Image]
+                    <!-- ADD YOUR POTHOS IMAGE URL HERE -->
+                    <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400" alt="Pothos">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Pothos</h3>
@@ -725,10 +735,12 @@
                 </div>
             </div>
 
+            <!-- Product 3: Monstera -->
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">In Stock</span>
-                    [Monstera Image]
+                    <!-- ADD YOUR MONSTERA IMAGE URL HERE -->
+                    <img src="https://images.unsplash.com/photo-1614594895304-fe7116ac3b58?w=400" alt="Monstera">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Monstera</h3>
@@ -748,9 +760,11 @@
                 </div>
             </div>
 
+            <!-- Product 4: Fiddle Leaf Fig -->
             <div class="product-card">
                 <div class="product-image">
-                    [Fiddle Leaf Fig Image]
+                    <!-- ADD YOUR FIDDLE LEAF FIG IMAGE URL HERE -->
+                    <img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=400" alt="Fiddle Leaf Fig">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">Fiddle Leaf Fig</h3>
