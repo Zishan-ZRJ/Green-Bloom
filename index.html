@@ -837,8 +837,8 @@ Meet your next plant friend 🌱💚</h1>
 
     <!-- Footer -->
     <footer>
-        <p>WhatsApp & Phone: (+88) 01403308418 </p>
-        <p>&copy; 2025 Green & Bloom.<br> All rights reserved.</p>
+        <p>WhatsApp & Phone: (+88) 01403308418</p>
+        <p>&copy; 2025 Green & Bloom. All rights reserved.</p>
     </footer>
 
     <!-- Cart Modal -->
@@ -862,3 +862,31 @@ Meet your next plant friend 🌱💚</h1>
                     <span>Total:</span>
                     <span id="cartTotal">৳0</span>
                 </div>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;" onclick="proceedToOrder()">Place Order via Google Form</button>
+        </div>
+    </div>
+
+    <script>
+        let cart = [];
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            updateCart();
+            showNotification(`${name} added to cart!`);
+        }
+
+        function updateCart() {
+            const cartCount = document.getElementById('cartCount');
+            cartCount.textContent = cart.length;
+            
+            const cartItems = document.getElementById('cartItems');
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<div class="empty-cart">Your cart is empty</div>';
+            } else {
+                cartItems.innerHTML = cart.map((item, index) => `
+                    <div class="cart-item">
+                        <div class="cart-item-image"></div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-name">${item.name}</div>
+                            <div class="cart-item-price">৳${item.price.
